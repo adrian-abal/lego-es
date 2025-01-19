@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script defer src="js/app.js"></script>
+	<title>LEGO®</title>
+</head>
+<body>
+	<header class="header">
+		<div class="center">
+			<div class="header__sup sup">
+				<a href="#" class="sup__kids">
+					<svg class="sup__arrow" width="37" height="16" viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+						<path fill="currentColor" d="M29.493.597l.095.084 6.535 6.54a1 1 0 01.083 1.319l-.083.094-6.535 6.54a1 1 0 01-1.498-1.32l.083-.094 4.83-4.834-31.908.001A1 1 0 01.98 6.934l.116-.007h31.907l-4.83-4.833a1 1 0 01-.082-1.32l.083-.094a1 1 0 011.32-.083z"></path>
+					</svg>
+					Zona de juegos
+				</a>
+				<div class="sup__wrapper">
+					<div class="sup__slider-wrapper">
+						<div class="sup__slider">
+							<ul class="sup__promotions">
+								<li class="sup__promotion">
+									<p class="sup__p">Consigue el set Año de la Serpiente de regalo con compras a partir de 70 €* <a href="#" class="sup__read-more">Saber más</a></p>
+								</li>
+								<li class="sup__promotion">
+									<p class="sup__p">Consigue el set Tucán tropical LEGO® con compras que cumplan los requisitos a partir de 40 €* <a href="#" class="sup__read-more">Saber más</a></p>
+								</li>
+								<li class="sup__promotion">
+									<p class="sup__p">¡ENVÍO GRATUITO para los pedidos superiores a 55€!* <a href="#" class="sup__read-more">Saber más</a></p>
+								</li>
+							</ul>	
+						</div>
+					</div>
+					<button class="sup__btn-close" aria-label="Cerrar promociones">
+						<svg class="sup__close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+						</svg>
+					</button>
+				</div>
+				<div class="sup__account">
+					<button class="sup__login" aria-label="Iniciar sesión">
+						<img class="sup__img" src="assets/img/account.webp" aria-label="Imagen de inicio de sesión"/>
+						<span class="sup__span">Iniciar sesión</span>
+					</button>
+					<div class="sup__separator" aria-hidden="true"></div>
+					<a href="#" class="sup__insiders" aria-label="Únete a LEGO® Insiders">
+						<img class="sup__img" src="assets/svg/join-insiders.svg" aria-label="Imagen de LEGO® Insiders"/>
+						<span class="sup__span">Únete a LEGO® Insiders</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__main-bar main-bar">
+			<div class="center">
+				<div class="main-bar__wrapper">
+					<div class="main-bar__left">
+						<button class="main-bar__menu" aria-label="Menú">
+							<svg class="main-bar__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M0 0h24v24H0z" stroke="none"/>
+								<path d="M10 6h10M4 12h16M7 12h13M4 18h10"/>
+							</svg>
+							<span class="main-bar__span main-bar__span--menu">Menú</span>
+						</button>
+						<a class="main-bar__home" href="#" alt="Página de inicio de LEGO">
+							<img class="main-bar__logo" src="assets/svg/brand-lego.svg" alt="Logo de LEGO">
+						</a>
+						<nav class="main-bar__nav">
+							<a href="#" class="main-bar__link">Comprar</a>
+							<a href="#" class="main-bar__link">Descubrir</a>
+							<a href="#" class="main-bar__link">Ayuda</a>
+							<a href="#" class="main-bar__link main-bar__link--new-features">Novedades</a>
+						</nav>
+					</div>
+	
+					<div class="main-bar__right">
+						<button class="main-bar__btn main-bar__btn--search" aria-label="Buscador de LEGO" title="Buscador de LEGO">
+							<svg class="main-bar__svg main-bar__svg--search" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+								<path d="M21 21l-6 -6" />
+							</svg>
+						</button>
+						<div class="main-bar__shopping">
+							<button class="main-bar__btn" aria-label="Lista de deseos" title="Lista de desos">
+								<svg class="main-bar__svg main-bar__svg--wishlist" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+							</button>
+							<a href="#" class="main-bar__a" aria-label="Bolsa de compra" title="Bolsa de compra">
+								<svg class="main-bar__svg main-bar__svg--cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+									<path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+									<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+								</svg>
+								<span class="main-bar__span main-bar__span--counter">(0)</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="center">
+			<section class="main__hero hero">
+				<picture class="hero__picture">
+					<source media="(max-width: 600px)" srcset="assets/img/1993-Homepage-202501-Hero-Standard-10350-Small.webp">
+					<source media="(max-width: 901px)" srcset="assets/img/1993-Homepage-202501-Hero-Standard-10350-Medium.webp">
+					<img class="hero__bg" src="assets/img/1993-Homepage-202501-Hero-Standard-10350-Large.webp" width="1600" height="500" alt="Banner de Esquina Tudor">
+				</picture>
+				<div class="hero__content">
+					<h2 class="hero__h2">¡Pasen y vean!</h2>
+					<p class="hero__p">Echa un vistazo a los últimos lanzamientos para 2025, como el nuevo set Esquina Tudor de LEGO® Icons.</p>
+					<div class="hero__wrapper">
+						<a href="#" class="hero__a">Comprar ahora
+							<svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2" stroke-linecap="round"  stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</a>
+						<a href="#" class="hero__a">Comprar todas las novedades
+							<svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2" stroke-linecap="round"  stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__shortcuts shortcuts">
+				<div class="shortcuts__container"></div>
+			</section>
+
+			<section class="main__newcomers newcomers">
+				<div class="newcomers__content">
+					<h2 class="newcomers__h2">Últimos lanzamientos</h2>
+					<div class="newcomers__move">
+						<div class="newcomers__container"></div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="main__new-arrivals new-arrivals">
+				<div class="new-arrivals__content">
+					<div class="new-arrivals__heading">
+						<h2 class="new-arrivals__h2">¡Sets destacados!</h2>
+						<div class="new-arrivals__controls">
+							<button class="new-arrivals__control" aria-label="Anterior">
+								<svg class="new-arrivals__svg new-arrivals__svg--left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+									<path d="M15 6l-6 6l6 6" />
+								</svg>
+							</button>
+							<button class="new-arrivals__control" aria-label="Siguiente">
+								<svg class="new-arrivals__svg new-arrivals__svg--right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+									<path d="M9 6l6 6l-6 6" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="new-arrivals__move">
+						<div class="new-arrivals__container"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__themes themes">
+				<div class="themes__container"></div>
+			</section>
+
+			<section class="main__botanicals botanicals">
+				<div class="botanicals__hero hero">
+					<picture class="hero__picture">
+						<source media="(max-width: 600px)"srcset="assets/img/Botanicals-Homepage-202501-Hero-Standard-Small-KV.webp">
+						<img class="hero__bg" src="assets/img/Botanicals-Homepage-202501-Hero-Standard-Large-KV.webp" width="1600" height="500" alt="Banner de Esquina Tudor" loading="lazy">
+					</picture>
+					<div class="hero__content">
+						<img class="hero__logo" src="assets/img/botanicals_2025_600w-w.webp" alt="Botanicals logo" width="493" height="60" loading="lazy">
+						<h2 class="hero__h2">¡Flores para todos!</h2>
+						<p class="hero__p">Sorprende con flores eternas con los sets de LEGO® Botanical.</p>
+						<div class="hero__wrapper">
+							<a href="#" class="hero__a">Comprar colección
+								<svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round" aria-hidden="true">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+									<path d="M9 6l6 6l-6 6" />
+								</svg>
+							</a>
+							<a href="#" class="hero__a">Saber más
+								<svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round" aria-hidden="true">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+									<path d="M9 6l6 6l-6 6" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__shop-ways shop-ways">
+				<div class="shop-ways__content">
+					<h2 class="shop-ways__h2">Más formas de comprar</h2>
+					<div class="shop-ways__move">
+						<div class="shop-ways__container">
+							<article class="shop-ways__article">
+								<a class="shop-ways__overview" href="#">
+									<img class="shop-ways__img" src="assets/img/Botanicals-Homepage-202501-Block-Standard-Offers.webp" alt="Ofertas, regalos y promociones" width="635" height="440" loading="lazy">
+								</a>
+								<div class="shop-ways__info">
+									<h3 class="shop-ways__h3">Descubre las ofertas</h3>
+									<p class="shop-ways__p">Explora ya las ofertas disponibles, los regalos con compras y las promociones.</p>
+									<a class="shop-ways__a" href="#">Saber más</a>
+								</div>
+							</article>
+
+							<article class="shop-ways__article">
+								<a class="shop-ways__overview" href="#">
+									<img class="shop-ways__img" src="assets/img/Botanicals-Homepage-202501-Block-Standard-Giftcard.webp" alt="Tarjetas regalo" width="635" height="440" loading="lazy">
+								</a>
+								<div class="shop-ways__info">
+									<h3 class="shop-ways__h3">Acierta siempre</h3>
+									<p class="shop-ways__p">Las tarjetas regalo LEGO® son siempre el regalo perfecto.</p>
+									<a class="shop-ways__a" href="#">Ir a la tienda</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__fan-builds fan-builds">
+				<div class="fan-builds__content">
+					<div class="fan-builds__heading">
+						<h2 class="fan-builds__h2">Construcciones de los fans</h2>
+						<p class="fan-builds__p">Publica tus fotos en Instagram con la etiqueta @LEGO para que opten a aparecer en el sitio web y hazte con los sets que más te gusten.</p>
+					</div>
+					<div class="fan-builds__move">
+						<ul class="fan-builds__ul">
+							<li class="fan-builds__li">
+								<a class="fan-builds__a" href="#">
+									<img class="fan-builds__img" src="assets/img/UGC-Page-2312-LOTR-Grid-Image.webp" alt="LEGO El Señor de los Anillos: Rivendel" title="El Señor de los Anillos: Rivendel" width="750" height="750" loading="lazy">
+								</a>
+							</li>
+							<li class="fan-builds__li">
+								<a class="fan-builds__a" href="#">
+									<img class="fan-builds__img" src="assets/img/UGC-Page-2404-SW-3-Grid-Image.webp" alt="LEGO Casco de la Princesa Leia (Boushh™)" title="Casco de la Princesa Leia (Boushh™)" width="750" height="750" loading="lazy">
+								</a>
+							</li>
+							<li class="fan-builds__li">
+								<a class="fan-builds__a" href="#">
+									<img class="fan-builds__img" src="assets/img/UGC-Page-2312-Insects-Grid-Image.webp" alt="LEGO Colección de Insectos" title="Colección de Insectos" width="750" height="750" loading="lazy">
+								</a>
+							</li>
+							<li class="fan-builds__li">
+								<a class="fan-builds__a" href="#">
+									<img class="fan-builds__img" src="assets/img/UGC-Page-2312-Fl-Grid-Image.webp" alt="LEGO Ramo de Flores Silvestres" title="Ramo de Flores Silvestres" width="750" height="750" loading="lazy">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<a class="fan-builds__explore" href="#">Explorar más</a>
+			</section>
+
+			<section class="main__highlights highlights">
+				<div class="highlights__content">
+					<h2 class="highlights__h2">Destacamos...</h2>
+					<div class="highlights__features">
+						<article class="highlights__article highlights__article--insider">
+							<a class="highlights__overview" href="#">
+								<img class="highlights__img" src="assets/img/Insiders1-202404-Page-Content-Block-Mixed-Large.webp" alt="Disfruta de recompensas, descuentos, comunidades y mucho más" width="650" height="512" loading="lazy">
+							</a>
+							<div class="highlights__info">
+								<h3 class="highlights__h3">Hazte LEGO® Insider</h3>
+								<p class="highlights__p">Accede a increíbles recompensas, descuentos, comunidades y mucho más.</p>
+								<a class="highlights__a" href="#">Unirse ahora</a>
+							</div>
+						</article>
+						<article class="highlights__article highlights__article--teamwork">
+							<a class="highlights__overview" href="#">
+								<img class="highlights__img" src="assets/img/LEGO_Builder_App_-_Mixed_Block_Large.webp" alt="Construye en compañía con la app de LEGO® Builder" width="650" height="512" loading="lazy">
+							</a>
+							<div class="highlights__info">
+								<h3 class="highlights__h3">¡Trabaja en equipo!</h3>
+								<p class="highlights__p">Construye en compañía con la app LEGO® Builder</p>
+								<a class="highlights__a" href="#">Saber más</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__discover discover">
+				<div class="discover__content">
+					<div class="discover__heading">
+						<h2 class="discover__h2">Descubre todos los detalles</h2>
+					</div>
+					<div class="discover__move">
+						<div class="discover__container"></div>
+					</div>
+					<a class="discover__all" href="#">Ver todos los articulos</a>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<div class="center">
+		<div class="main__about-shop about-shop">
+			<p class="about-shop__p">Te damos la bienvenida a la LEGO® Shop oficial, donde encontrarás fantásticos juguetes de construcción LEGO, <a class="about-shop__a" href="#">regalos</a>, increíbles piezas de exposición y mucho más para <a class="about-shop__a" href="#">peques</a> y adultos por igual. Elige el regalo perfecto para bebés, adolescentes y adultos con el que celebrar <a class="about-shop__a" href="#">cumpleaños</a> y otras ocasiones especiales, como el <a class="about-shop__a" href="#">Día de San Valentín</a>, el <a class="about-shop__a" href="#">Día de la Madre</a> y el <a class="about-shop__a" href="#">Día del Padre</a>. Podrás comprar fácilmente juguetes con los que regalar horas de diversión y juego imaginativo. También podrás encontrar una selección de <a class="about-shop__a" href="#">sets LEGO para adultos</a> ideales para todos los <a class="about-shop__a" href="#">intereses</a>, tanto si le apasionan los <a class="about-shop__a" href="#">coches</a> como las <a class="about-shop__a" href="#">flores</a>, los <a class="about-shop__a" href="#">videojuegos</a> y muchas cosas más.</p>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="center">
+			<div class="footer__general">
+				<div class="footer__shop shop">
+					<div class="shop__wrapper">
+						<img class="shop__logo" src="assets/svg/brand-lego.svg" alt="Logo de LEGO" loading="lazy">
+						<button class="shop__region">
+							<svg class="shop__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+								<path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+							</svg>
+							España
+						</button>
+					</div>
+					<ul class="shop__ul">
+						<li class="shop__li">
+							<a class="shop__a" href="#">Tarjetas regalo</a>
+						</li>
+						<li class="shop__li">
+							<a class="shop__a" href="#">Encuentra la inspiración</a>
+						</li>
+						<li class="shop__li">
+							<a class="shop__a" href="#">Catálogos LEGO</a>
+						</li>
+						<li class="shop__li">
+							<a class="shop__a" href="#">Encontrar una tienda</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__company company">
+					<div class="company__info">
+						<h4 class="company__h4">Quiénes somos</h4>
+						<button class="company__toggle company__toggle--about-us" aria-expanded="false" aria-controls="company-about-us">Quiénes somos
+							<svg class="company__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</button>
+						<ul id="company-about-us" class="company__ul">
+							<li class="company__li">
+								<a class="company__a" href="#">The LEGO group</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Noticias LEGO®</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Sostenibilidad</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Declaración de transparencia de la cadena de suministro</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Certificación de productos LEGO</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Ofertas de empleo LEGO</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">LEGO compliance line</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="company__info">
+						<h4 class="company__h4">Atención al cliente</h4>
+						<button class="company__toggle" aria-expanded="false" aria-controls="company-support">Atención al cliente
+							<svg class="company__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</button>
+						<ul id="company-support" class="company__ul">
+							<li class="company__li">
+								<a class="company__a" href="#" >Ponte en contacto con nosotros</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Instrucciones de construcción</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Piezas de repuesto</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Envíos y devoluciones</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Métodos de pago</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Términos y condiciones</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Productos retirados</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="company__info">
+						<h4 class="company__h4">Atracciones</h4>
+						<button class="company__toggle" aria-expanded="false" aria-controls="company-explore">Atracciones
+							<svg class="company__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</button>
+						<ul id="company-explore" class="company__ul">
+							<li class="company__li">
+								<a class="company__a" href="#">LEGO® House</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">LEGOLAND® Parks</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">LEGOLAND Discovery Centers</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="company__info">
+						<h4 class="company__h4">Más información</h4>
+						<button class="company__toggle" aria-expanded="false" aria-controls="company-more-info">Más información
+							<svg class="company__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</button>
+						<ul id="company-more-info" class="company__ul">
+							<li class="company__li">
+								<a class="company__a" href="#">LEGO® Magazine (GRATIS)</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">LEGO Education</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">LEGO Ideas</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">LEGO Foundation</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Ofertas para estudiantes</a>
+							</li>
+							<li class="company__li">
+								<a class="company__a" href="#">Programa para socios</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer__newsletter newsletter">
+					<h4 class="newsletter__h4">Suscríbete al correo electrónico de LEGO® shop</h4>
+					<div class="newsletter__subscribe">
+						<input id="newsletter-input" class="newsletter__input" type="email" placeholder="">
+						<button class="newsletter__submit" aria-label="Suscribirse al boletín de noticias ">
+							<svg class="newsletter__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M9 6l6 6l-6 6" />
+							</svg>
+						</button>
+						<label class="newsletter__label" for="newsletter-input">Tu dirección de correo electrónico</label>
+					</div>
+				
+				</div>
+				
+				<div class="footer__rrss rrss">
+					<div class="rrss__wrapper">
+						<h4 class="rrss__h4">Síguenos en redes</h4>
+						<ul class="rrss__ul">
+							<li class="rrss__li">
+								<a class="rrss__a" href="#" title="Facebook">
+									<svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+										<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+									</svg>
+								</a>
+							</li>
+							<li class="rrss__li">
+								<a class="rrss__a" href="#" title="Twitter-X">
+									<svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+									</svg>
+								</a>
+							</li>
+							<li class="rrss__li">
+								<a class="rrss__a" href="#" title="Instagram">
+									<svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+									</svg>
+								</a>
+							</li>
+							<li class="rrss__li">
+								<a class="rrss__a" href="#" title="YouTube">
+									<svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer__legal legal">
+				<ul class="legal__ul">
+					<li class="legal__li">
+						<a href="#" class="legal__a">Política de privacidad</a>
+					</li>
+					<li class="legal__li">
+						<a href="#" class="legal__a">Cookies</a>
+					</li>
+					<li class="legal__li">
+						<a href="#" class="legal__a">Aviso legal</a>
+					</li>
+					<li class="legal__li">
+						<a href="#" class="legal__a">Cláusulas de uso</a>
+					</li>
+					<li class="legal__li">
+						<a href="#" class="legal__a">Accesibilidad</a>
+					</li>
+					<li class="legal__li">
+						<a href="#" class="legal__a">Configuración de cookies</a>
+					</li>
+				</ul>
+
+				<p class="legal__copyright">LEGO System A/S, DK-7190 Billund, Dinamarca. Solo se permite la compra en línea a personas mayores de 18 años. LEGO, el logotipo LEGO, la minifigura, DUPLO, el logotipo de FRIENDS, el logotipo de MINIFIGURES, DREAMZzz, NINJAGO, VIDIYO y MINDSTORMS son marcas comerciales de The LEGO Group. ©2024 The LEGO Group. Todos los derechos reservados. El uso de este sitio supone la aceptación de las cláusulas de uso.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/quicklinks.js" type="module"></script>
+	<script src="js/newcomers.js" type="module"></script>
+	<script src="js/products.js" type="module"></script>
+	<script src="js/discover.js" type="module"></script>
+</body>
+</html>

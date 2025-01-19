@@ -1,0 +1,114 @@
+.fan-builds {
+  margin: 0 auto;
+  padding: 2em 1em;
+  
+  &__content {
+    width: 100%;
+    max-width: 75em;
+    @include flexbox(column, nowrap, center, center, 1em);
+    margin: 0 auto;
+  }
+
+  &__heading {
+    width: 100%;
+    max-width: 40em;
+    @include flexbox(column, nowrap, center, center, 1em);
+    margin: 0 auto;
+  }
+  
+  &__h2 {
+    width: 100%;
+    font-family: 'pt_sansbold';
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  &__p {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__move {
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      scrollbar-width: none;
+      scroll-snap-type: x mandatory;
+      overflow-x: scroll;
+    }
+  }
+
+  &__ul {
+    @include flexbox(row, nowrap, start, center, 1em);
+
+    @media (max-width: 1024px) {
+      width: calc(100% / 3 * 4);
+    }
+   
+    @media (max-width: 768px) {
+      width: calc(100% / 2 * 4);
+    }
+    
+    @media (max-width: 560px) {
+      width: calc(100% * 4);
+    }
+  }
+
+  &__li {
+    width: calc(100% / 4);
+    border-radius: .25em;
+    scroll-snap-align: start;
+
+    @media (max-width: 1024px) {
+      width: calc(100% / 4 - 3em);
+    }
+  }
+
+  &__a {
+    @include flexbox(row, nowrap, center, center);
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 25%;
+      @include flexbox(row, nowrap, center, center);
+      color: var(--white);
+      font-weight: 600;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all .3s ease;
+    }
+
+    &:hover::after {
+      content: 'Ver producto';
+      background-color: rgba(0 0 0 / .6);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: .25em;
+  }
+
+  &__explore {
+    width: fit-content;
+    margin: 2em auto 0;
+    padding: .5em 1em;
+    border-radius: 2em;
+    color: var(--white);
+    background-color: var(--dark-gray);
+    
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}

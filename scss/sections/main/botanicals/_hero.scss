@@ -1,0 +1,105 @@
+.botanicals {
+  .hero {
+    position: relative;
+    
+    &__picture {
+      @include flexbox(row, nowrap, center, center);
+    }
+    
+    &__bg {
+      width: 100%;
+      min-height: 25em;
+      object-fit: cover;
+    }
+    
+    &__content {
+      width: 100%;
+      max-width: 33em;
+      @include flexbox(column, nowrap, center, center, 1em);
+    
+      @media (max-width: 600px) {
+        max-width: initial;
+        padding: 2em 1em;
+        background-color: var(--black);
+      }
+    
+      @media (min-width: 600px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    &__logo {
+      width: 100%;
+      max-width: 8em;
+      height: auto;
+      aspect-ratio: 493/60;
+      object-fit: cover;
+
+      @media (max-width: 1280px) {
+        max-width: 6.65em;
+      }
+    }
+    
+    &__h2 {
+      color: var(--white);
+      font-size: 2.5em;
+      font-weight: 500;
+    
+      @media (max-width: 1280px) {
+        font-size: 1.75em;
+      }
+    }
+    
+    &__p {
+      color: var(--white);
+      font-size: 1.15em;
+      text-align: center;
+    
+      @media (max-width: 1280px) {
+        font-size: 1em;
+      }
+    }
+    
+    &__wrapper {
+      @include flexbox(row, nowrap, center, center, .5em);
+      
+      @media (max-width: 480px) {
+        @include flexbox(column, nowrap, center, center, 1em);
+      }
+    }
+    
+    &__a {
+      @include flexbox(row, nowrap, center, center, .25em);
+      padding: .5em 1em;
+      border-radius: .25em;
+      color: var(--black);
+      background-color: var(--white);
+      font-weight: bold;
+      line-height: 1.1;
+      
+      &:hover {
+        color: var(--white);
+        background-color: var(--black);
+        font-weight: 400;
+      }
+    
+      &:hover .hero__svg {
+        stroke: var(--white);
+      }
+    
+      @media (max-width: 1280px) {
+        font-size: .875em;
+      }
+    }
+    
+    &__svg {
+      width: 1.5em;
+      height: 1.5em;
+      fill: transparent;
+      stroke: var(--black);
+    }
+  }
+}

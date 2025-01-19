@@ -1,0 +1,238 @@
+.new-arrivals {
+  padding: 2em 1em;
+  background-color: var(--dawn-gray);
+
+  &__content {
+    width: 100%;
+    @include flexbox(column, nowrap, center, center, 1em);
+  }
+
+  &__heading {
+    width: 100%;
+    @include flexbox(row, nowrap, space-between, center);
+  }
+
+  &__h2 {
+    font-family: 'pt_sansbold';
+    font-size: 1.5em;
+  }
+
+  &__controls{
+    width: fit-content;
+    @include flexbox(row, nowrap, start, center, .5em);
+
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__control {
+    @include flexbox(row, nowrap, center, center);
+    padding: .25em;
+    border: none;
+    border-radius: 100%;
+    background: transparent;
+    box-shadow: 0 1px .25em var(--dark-gray);
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: var(--dark-gray);
+
+      .new-arrivals__svg {
+        stroke: var(--white)
+      }
+    }
+  }
+
+  &__move {
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+  }
+
+  &__container {
+    width: calc(100% / 5 * 10);
+    @include flexbox(row, nowrap, start, start, 1em);
+
+    @media (max-width: 1280px) {
+      width: calc(100% / 4 * 10);
+    } 
+   
+    @media (max-width: 1024px) {
+      width: calc(100% / 3 * 10);
+    }
+
+    @media (max-width: 768px) {
+      width: calc(100% / 2 * 10);
+    }
+
+    @media (max-width: 560px) {
+      width: calc(100% * 10);
+    }
+
+    transition: transform .3s ease;
+  }
+
+  &__article { 
+    width: calc(100% / 10);
+    @include flexbox(column, nowrap, center, start, 1em);
+    padding: 1em; 
+    border-radius: .25em;
+    background-color: var(--white);
+
+    scroll-snap-align: start;
+
+    @media (max-width: 560px) {
+      width: calc(100% / 10 - 2em);
+    }
+  }
+  
+  &__actions {
+    width: 100%;
+    @include flexbox(row, nowrap, space-between, center, 1em);
+
+    &--meta {}
+
+    &--to-cart {
+      @include flexbox(column, nowrap, center, start, 1em);
+      padding: 1em 0 .25em;
+      border-top: 1px solid #ccc;
+    }
+  }
+  
+  &__fav {
+    @include flexbox(row, nowrap, center, center);
+    border: none;
+    border-radius: 2em;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__tag {
+    padding: .25rem .75rem;
+    border-radius: 2em;
+    color: var(--black);
+    background-color: var(--yellow);
+    font-size: .875em;
+    font-weight: 500;
+  }
+
+  &__overview {
+    width: 100%;
+    @include flexbox(row, nowrap, center, center);
+    padding: .5em;
+    border-radius: .5em;
+    
+    &:hover ~ .new-arrivals__info > .new-arrivals__name {
+      text-decoration: underline;
+    }
+  }
+  
+  &__img {
+    width: 100%;
+    max-width: 15em;
+    height: auto;
+    min-height: 12.5em;
+    max-height: 12.5em;
+    object-fit: scale-down;
+  }
+  
+  &__info {
+    width: 100%;
+    @include flexbox(column, nowrap, center, start, 1em);
+  }
+
+  &__specs {
+    @include flexbox(row, nowrap, center, end, 1em);
+  }
+
+  &__wrapper {
+    @include flexbox(row, nowrap, start, end, .25em);
+  }
+  
+  &__svg {
+    width: 1.5em;
+    height: 1.5em;
+    
+    &--left, &--right {
+      width: 2em;
+      height: 2em;
+      fill: transparent;
+      stroke: var(--dark-gray);
+    }
+
+    &--left {
+      transform: translateX(-5%);
+    }
+
+    &--right {
+      transform: translateX(5%);
+    }
+
+    &--fav {
+      fill: #ccc;
+      
+      &:hover {
+        fill: var(--love);
+      }
+    }
+
+    &--cart {
+      fill: transparent;
+      stroke: var(--black);
+    }
+  }
+  
+  &__span {
+    &--age {
+
+    }
+  
+    &--pieces {
+      
+    }
+  }
+
+  &__name {
+    width: fit-content;
+    color: var(--black);
+    font-size: 1.1em;
+    font-weight: bold;
+
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  &__add-to-cart {
+    @include flexbox(row, nowrap, center, center, .25em);
+    padding: .5em 1em;
+    border: none;
+    border-radius: 2em;
+    background: var(--orange);
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 0px 2em .5em rgba(0, 0, 0, .1);
+    }
+  }
+  
+  &__price {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+}

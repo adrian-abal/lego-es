@@ -1,0 +1,28 @@
+@import 'partials/_reset', 'partials/_mixin', 'partials/_fonts', 'partials/_custom';
+
+@import 'sections/_header';
+@import 'sections/_main.scss';
+@import 'sections/_footer.scss';
+
+
+.center {
+  width: 100%;
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--golden);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}

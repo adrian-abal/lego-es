@@ -1,0 +1,344 @@
+.footer {
+  padding: 2em 0;
+  background-color: var(--midnight-blue-1);
+  
+  &__general {
+    display: grid;
+    grid-template-areas: 
+      'shop company'
+      'newsletter rrss';
+    gap: 2em 1em;
+
+    @media (max-width: 1024px) {
+      grid-template-areas: 
+      'shop'
+      'newsletter'
+      'company'
+      'rrss';
+    }
+  }
+}
+
+.shop {
+  grid-area: shop;
+  @include flexbox(column, nowrap, start, start, 1em);
+  padding: 0 0 0 1em;
+  color: var(--white);
+  
+  @media (max-width: 1024px) {
+    padding: 0 1em;
+  }
+  &__wrapper {
+    @include flexbox(column, nowrap, center, start, 1em);
+    
+    @media (max-width: 640px) {
+      @include flexbox(row, nowrap, center, start, 1em);
+    }
+  }
+
+  &__logo {
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  &__region {
+    @include flexbox(row, nowrap, center, center, .5em);
+    padding: .5em .75em;
+    border: none;
+    border-radius: .25em;
+    color: inherit;
+    background-color: var(--midnight-blue-2);
+    font-size: .875em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--black);
+    }
+  }
+
+  &__svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: transparent;
+    stroke: var(--white);
+  }
+
+  &__ul {
+    @include flexbox(column, nowrap, center, start, 1em);
+  }
+
+  &__li {}
+
+  &__a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.company {
+  grid-area: company;
+  @include flexbox(row, nowrap, start, start, 2em);
+  padding: 0 1em 0 0;
+  color: var(--white);
+  
+  @media (max-width: 1024px) {
+    @include flexbox(column, nowrap, center, start);
+    padding: 0;
+  }
+
+  &__info {
+    width: 100%;
+  }
+
+  &__h4 {
+    font-family: 'pt_sansbold';
+    text-transform: uppercase;
+    
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    width: 100%;
+    @include flexbox(row, nowrap, space-between, center);
+    padding: .75em 1em;
+    border: none;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    background-color: transparent;
+    font-family: 'pt_sansbold';
+    text-align: start;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &--about-us {
+      border-top: 2px solid var(--white);
+    }
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__svg {
+    width: 1.75em;
+    height: 1.75em;
+    fill: transparent;
+    stroke: var(--white);
+    transform: rotate(90deg);
+
+    transition: transform .3s ease;
+
+    &--rotated {
+      transform: rotate(270deg)
+    }
+  }
+  
+  &__ul {
+    @include flexbox(column, nowrap, center, start, 1em);
+    margin: 1em 0 0;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: 0;
+      gap: 0;
+      margin: 0;
+      background-color: var(--midnight-blue-2);
+      overflow: hidden;
+      transition: height .3s ease;
+      interpolate-size: allow-keywords;
+      
+      &--expanded {
+        height: auto;
+      }
+    }
+  }
+
+  &__li {
+    width: 100%;
+    
+    @media (max-width: 1024px) {
+      padding: 1em 2em;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+      &:last-of-type {
+        border: none;
+      }
+    }
+  }
+  
+  &__a {
+    width: 100%;
+    color: inherit;
+    text-align: start;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.newsletter {
+  grid-area: newsletter;
+  padding: 0 0 0 1em;
+  
+  @media (max-width: 1024px) {
+    padding: 0 1em;
+  }
+
+  &__h4 {
+    color: var(--white);
+    font-family: 'pt_sansbold';
+    text-transform: uppercase;
+  }
+
+  &__subscribe {
+    width: 100%;
+    max-width: 30em;
+    @include flexbox(row, nowrap, start, center);
+    margin: 1em 0 0;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 3.75em;
+    padding: 1rem;
+    border: none;
+    border-radius: .25em 0 0 .25em;
+    background-color: var(--white);
+
+    &:focus ~ .newsletter__label {
+      font-size: .75em;
+      position: absolute;
+      top: .5rem;
+      left: 1rem;
+      transform: initial;
+    }
+
+    &:not(:placeholder-shown) ~ .newsletter__label {
+      font-size: .75em;
+      position: absolute;
+      top: .5rem;
+      left: 1rem;
+      transform: initial;
+    }
+  }
+
+  &__submit {
+    padding: 1em;
+    @include flexbox(row, nowrap, center, center);
+    border: none;
+    border-radius: 0 .25em .25em 0;
+    background-color: var(--orange);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 0px 4em .5em rgba(0, 0, 0, .1);
+    }
+  }
+  
+  &__svg {
+    width: 1.75em;
+    height: 1.75em;
+    fill: transparent;
+    stroke: var(--white);
+    stroke: #201d48;
+  }
+
+  &__label {
+    color: #757575;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    cursor: text;
+  }
+}
+
+.rrss {
+  grid-area: rrss;
+  @include flexbox(row, nowrap, end, start);
+  padding: 0 1em 0 0;
+  
+  @media (max-width: 1024px) {
+    padding: 0 1em;
+  }
+
+  @media (max-width: 1024px) {
+    @include flexbox(row, nowrap, start, center);
+  }
+
+  &__wrapper {
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &__h4 {
+    color: var(--white);
+    font-family: 'pt_sansbold';
+    text-transform: uppercase;
+  }
+  
+  &__ul {
+    @include flexbox(row, nowrap, center, center, 1em);
+    width: 100%;
+    margin: 1em auto 0
+  }
+  
+  &__li {}
+  
+  &__a {
+    @include flexbox(row, nowrap, center, center);
+    padding: .5em;
+    border-radius: 2em;
+    background-color: var(--midnight-blue-2);
+
+    &:hover {
+      background-color: var(--black);
+    }
+  }  
+  &__svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: var(--white);
+  }
+}
+
+.legal {
+  @include flexbox(column, nowrap, center, center, 2em);
+  margin: 3em 0 0;
+  padding: 0 1em;
+  color: var(--white);
+  font-size: .875em;
+  
+  &__ul {
+    @include flexbox(row, wrap, center, center, 2em);
+      
+    @media (max-width: 768px) {
+      gap: .5em;
+    }
+  }
+
+  &__li {}
+
+  &__a {
+    color: inherit;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+}
